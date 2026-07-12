@@ -5,6 +5,8 @@ import Dashboard from './features/dashboard/Dashboard'
 import VehicleRegistry from './features/vehicles/VehicleRegistry'
 import DriverManagement from './features/drivers/DriverManagement'
 import TripManagement from './features/trips/TripManagement'
+import Maintenance from './features/maintenance/Maintenance'
+import Expenses from './features/expenses/Expenses'
 import ProtectedRoute from './routes/ProtectedRoute'
 
 const pageTitles = {
@@ -28,6 +30,10 @@ function AppContent() {
         return <DriverManagement />
       case '/trips':
         return <TripManagement />
+      case '/maintenance':
+        return <Maintenance />
+      case '/expenses':
+        return <Expenses />
       case '/':
         return <Dashboard />
       default:
