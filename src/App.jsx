@@ -4,6 +4,7 @@ import DashboardShell from './components/layout/DashboardShell'
 import Dashboard from './features/dashboard/Dashboard'
 import VehicleRegistry from './features/vehicles/VehicleRegistry'
 import DriverManagement from './features/drivers/DriverManagement'
+import TripManagement from './features/trips/TripManagement'
 import ProtectedRoute from './routes/ProtectedRoute'
 
 const pageTitles = {
@@ -25,6 +26,8 @@ function AppContent() {
         return <VehicleRegistry />
       case '/drivers':
         return <DriverManagement />
+      case '/trips':
+        return <TripManagement />
       case '/':
         return <Dashboard />
       default:
