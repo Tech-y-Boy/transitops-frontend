@@ -1,10 +1,12 @@
+import DashboardShell from './components/layout/DashboardShell'
+
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-emerald-400">
-        TransitOps — Tailwind is Working 🚀
-      </h1>
-    </div>
+    <DashboardShell title="Dashboard">
+      <div className="flex items-center justify-center h-64 rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-700 text-slate-400">
+        Dashboard content coming in Hour 2 🚀
+      </div>
+    </DashboardShell>
   )
 }
 
